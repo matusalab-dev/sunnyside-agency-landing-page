@@ -1,0 +1,48 @@
+.testimonials {
+  padding: 7em 3em 7em;
+  // margin-top: 2em;
+
+  @include breakpoint-down($breakpoint-md) {
+    // padding: 5em 3em 5em;
+  }
+  h3 {
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    color: $neutral-Dark-grayish-blue;
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  // h1 { font-size: #{"max(1vw, 20px)"}};
+  &__wrapper {
+    @include griddy(20em, 5em);
+    @include breakpoint-down(875px) {
+      grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    }
+    @include breakpoint-up($breakpoint-md) {
+      @include griddy(20em, 2em);
+      grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    }
+
+    .testimonial {
+      font-family: $secondary-font;
+      flex-direction: column;
+      text-align: center;
+      &__profile {
+        width: 6em;
+        border-radius: 50%;
+      }
+
+      &__comment {
+        font-family: $primary-font;
+        font-weight: 600;
+        max-width: 35ch;
+      }
+      &__name {
+      }
+      &__title {
+        font-family: $primary-font;
+        color: $neutral-Grayish-blue;
+      }
+    }
+  }
+}

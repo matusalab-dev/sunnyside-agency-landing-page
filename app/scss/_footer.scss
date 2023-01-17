@@ -1,0 +1,32 @@
+footer {
+  flex-direction: column;
+  padding: 4em 0;
+  background-color: $primary-Dark-moderate-cyan;
+  .logo {
+    fill: $primary-dark-desaturated;
+  }
+  .nav {
+    &--secondary {
+      max-width: 30em;
+      width: 20.6em;
+      margin-bottom: 2em;
+      @include breakpoint-down($breakpoint-sm) {
+        max-width: 20em;
+        width: 15em;
+      }
+    }
+
+    &__link {
+      color: $primary-Dark-blue;
+      transition: color 0.2s ease-out;
+      &:hover {
+        color: $neutral-white;
+      }
+    }
+  }
+  .social-links {
+    margin-top: 2em;
+    max-width: 20em;
+    width: 10em;
+  }
+}

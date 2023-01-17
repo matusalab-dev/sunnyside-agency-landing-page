@@ -1,0 +1,125 @@
+.header {
+  min-height: 100vh;
+  background-image: url(/images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2em 2em 0 2em;
+
+  @include breakpoint-down(423px) {
+    padding: 2em 1.5em 0 1.5em;
+  }
+  // position relative to the mobile nav-ba
+  // position: relative;
+  &__menu {
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.4em;
+
+    > span {
+      // transition: all 0.6s ease-in;
+      display: block;
+      border-radius: 0.19em;
+      width: 1.8em;
+      height: 2.3px;
+      background-color: rgba($neutral-white, 0.6);
+    }
+  }
+  .nav__links li:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  position: relative;
+  .arrow {
+    position: absolute;
+    bottom: 15em;
+    left: 50%;
+    width: 1.2em;
+  }
+}
+
+.close {
+  span:first-child {
+    transform: translate(0, 0.28em) rotate(45deg);
+  }
+  span:nth-child(2) {
+    display: none;
+  }
+  span:last-child {
+    transform: translate(0, -0.28em) rotate(-45deg);
+  }
+}
+
+// nav-bar for mobile and desktop
+.nav__links-mobile {
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  margin-left: auto;
+  justify-content: center;
+  gap: 2em;
+  min-height: 200px;
+  background: $neutral-white;
+  margin-top: 4em;
+  padding: 2em 3em;
+  text-align: left;
+  position: relative;
+
+  transition: transform, opacity 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateX(3600px);
+  @include breakpoint-down(453px) {
+    margin-right: auto;
+  }
+
+  a.nav__link {
+    color: $neutral-Grayish-blue;
+  }
+  &::before {
+    position: absolute;
+    top: -12%;
+    right: 0.02vw;
+    content: "";
+    width: 2em;
+    // max-width: 3em;
+    height: 2em;
+    background-color: $neutral-white;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+
+  &.is-open {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// nav-link for mobile
+.nav__link {
+  color: $neutral-white;
+  // transition: background-color, color 0.2s ease-in;
+  &:hover {
+    // color: hsla(0, 0%, 100%, 0.7);
+  }
+  &--contact {
+    display: inline-block;
+    padding: 0.7em 1em;
+    text-transform: uppercase;
+    font-family: $secondary-font;
+    border-radius: 1.3em;
+    color: $neutral-very-dark-desaturated-blue;
+
+    &--mobile {
+      background: $primary-yellow;
+      color: $neutral-very-dark-desaturated-blue !important;
+    }
+    &--desktop {
+      background: $neutral-white;
+      &:hover,
+      &:active {
+        background: $primary-Dark-moderate-cyan;
+        background: rgba($neutral-white, 0.6);
+        // color: $neutral-white;
+      }
+    }
+  }
+}

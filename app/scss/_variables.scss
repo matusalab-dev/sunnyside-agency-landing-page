@@ -1,0 +1,23 @@
+// colors
+// primary colors
+$primary-soft-red: hsl(7, 99%, 70%);
+$primary-yellow: hsl(51, 100%, 49%);
+$primary-dark-desaturated: #25564b;
+$primary-Dark-blue: hsl(198, 62%, 26%);
+// $primary-Dark-moderate-cyan: rgba(59, 199, 199, 0.87);
+$primary-Dark-moderate-cyan: rgb(59, 199, 199);
+
+// Neutral colors
+$neutral-very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$neutral-Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$neutral-Dark-grayish-blue: hsl(232, 10%, 55%);
+$neutral-Grayish-blue: hsl(210, 4%, 67%);
+$neutral-white: hsl(0, 0%, 100%);
+
+// typograghy
+$primary-font: "Barlow", sans-serif;
+$secondary-font: "Fraunces", serif;
+
+// media queries breakpoints
+$breakpoint-md: 46.94em;
+$breakpoint-sm: 26.44em;

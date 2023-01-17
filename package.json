@@ -1,0 +1,14 @@
+{
+  "name": "sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "description": "the Sunnyside agency landing page project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass app/scss/style.scss dist/style.css -w"
+  },
+  "author": "matusalab",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}

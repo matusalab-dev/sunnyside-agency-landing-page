@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <script defer src="app/js/script.js"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body id="home">
+    <!-- header section of the website -->
+    <header class="header" id="header">
+      <nav class="nav nav--primary flex flex-jc-sb flex-ai-c">
+        <a href="#home">
+          <img
+            src="./images/desktop//logo.svg"
+            alt="sunnyside logo"
+            class="header__logo"
+          />
+        </a>
+
+        <div class="header__menu flex hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav__links flex flex-ai-c hide-for-mobile">
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#footer" class="nav__link">About</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li>
+            <a
+              href="#footer"
+              class="nav__link nav__link--contact nav__link--contact--desktop"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#footer"
+        ><img
+          src="./images/icon-arrow-down.svg"
+          class="arrow flex"
+          alt="down arrow pointer"
+      /></a>
+
+      <!-- the nav-bar for mobile -->
+      <ul class="nav__links nav__links-mobile flex hide-for-desktop">
+        <li><a href="#footer" class="nav__link nav__link-mobile">About</a></li>
+        <li>
+          <a href="#services" class="nav__link nav__link-mobile">Services</a>
+        </li>
+        <li>
+          <a href="#projects" class="nav__link nav__link-mobile">Projects</a>
+        </li>
+        <li>
+          <a
+            href="#footer"
+            class="nav__link nav__link--contact nav__link--contact--mobile"
+            >Contact</a
+          >
+        </li>
+      </ul>
+
+      <h1 class="heading heading--primary">We are creatives</h1>
+    </header>
+
+    <!-- the main section of the website -->
+    <main id="services" class="main">
+      <section class="container">
+        <div
+          class="container__item container__item--content flex flex-jc-c flex-ai-s spacing"
+        >
+          <h2 class="heading heading--secondary">Transform your brand</h2>
+
+          <p class="desc container__description">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <button class="btn btn--secondary">learn more</button>
+        </div>
+        <div
+          class="container__item container__item--image container__item--image-1"
+        >
+          <img
+            src="./images/desktop/image-transform.jpg"
+            alt="one of our feaures to transform your brand"
+            class="container__image"
+          />
+        </div>
+      </section>
+
+      <section class="container">
+        <div
+          class="container__item container__item--content flex flex-jc-c flex-ai-s spacing"
+        >
+          <h2 class="heading heading--secondary">
+            Stand out to the right audience
+          </h2>
+
+          <p class="desc">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <button class="btn btn--secondary">learn more</button>
+        </div>
+        <div
+          class="container__item container__item--image container__item--image-2"
+        >
+          <img
+            src="./images/desktop/image-stand-out.jpg"
+            alt=""
+            class="container__image"
+          />
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <!-- set a background image to each side  -->
+
+        <div class="features__feature features__feature--1 spacing--md flex">
+          <h2 class="heading secondary-heading">Graphic design</h2>
+
+          <p class="description">
+            Graphic design Great design makes you memorable. We deliver artwork
+            that underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+
+        <div class="features__feature features__feature--2 spacing--md flex">
+          <h2 class="heading secondary-heading">Photography</h2>
+
+          <p class="description">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </section>
+
+      <!-- features section of the website -->
+      <section class="testimonials">
+        <h3>Client testimonials</h3>
+
+        <div class="testimonials__wrapper flex-gap-col">
+          <div class="testimonial flex spacing flex-ai-c">
+            <img
+              class="testimonial__profile"
+              src="./images/image-emily.jpg"
+              alt="emily's profile picture"
+            />
+            <p class="desc testimonial__comment">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <div class="testimonial__label">
+              <h4 class="heading testimonials__name">Emily R.</h4>
+              <p class="testimonial__title">Marketing Director</p>
+            </div>
+          </div>
+
+          <div class="testimonial flex spacing flex-ai-c">
+            <img
+              class="testimonial__profile"
+              src="./images/image-thomas.jpg"
+              alt="Thomas's profile picture"
+            />
+            <p class="desc desc testimonial__comment">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <div class="testimonial__label">
+              <h4 class="heading testimonials__name">Thomas S.</h4>
+              <p class="testimonial__title">Chief Operating Officer</p>
+            </div>
+          </div>
+          <div class="testimonial flex spacing flex-ai-c">
+            <img
+              class="testimonial__profile"
+              src="./images/image-jennie.jpg"
+              alt="Jennie's profile picture"
+            />
+            <p class="desc desc testimonial__comment">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <div class="testimonial__label">
+              <h4 class="heading testimonials__name">Jennie F.</h4>
+              <p class="testimonial__title">Business Owner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects flex">
+        <div class="images__wrapper">
+          <img
+            src="./images/desktop/image-gallery-milkbottles.jpg"
+            alt=""
+            class="projects__image"
+          />
+        </div>
+        <div class="images__wrapper">
+          <img
+            src="./images/desktop/image-gallery-orange.jpg"
+            alt=""
+            class="projects__image"
+          />
+        </div>
+        <div class="images__wrapper">
+          <img
+            src="./images/desktop/image-gallery-cone.jpg"
+            alt=""
+            class="projects__image"
+          />
+        </div>
+
+        <div class="images__wrapper">
+          <img
+            src="./images/desktop/image-gallery-sugarcubes.jpg"
+            alt=""
+            class="projects__image"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer flex flex-ai-c flex-jc-s spacing">
+      <a href="#home"
+        ><img src="./images/logo.svg" alt="logo" class="logo"
+      /></a>
+      <nav class="nav nav--secondary">
+        <ul class="nav__links flex flex-jc-sb">
+          <li><a href="#footer" class="nav__link">About</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social-links flex flex-jc-sb">
+        <li>
+          <a href="#"
+            ><img src="./images/icon-facebook.svg" alt="icon-facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./images/icon-instagram.svg" alt="icon-instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./images/icon-twitter.svg" alt="icon-twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="./images/icon-pinterest.svg" alt="icon-pinterest"
+          /></a>
+        </li>
+      </ul>
+
+      <!-- <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Matusalab</a>.
+      </div> -->
+    </footer>
+  </body>
+</html>
