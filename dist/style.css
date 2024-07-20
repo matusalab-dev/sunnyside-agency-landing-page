@@ -297,6 +297,10 @@ a {
   border-radius: 1.3em;
   color: hsl(212deg, 27%, 19%);
 }
+.nav__link--contact--desktop:hover, .nav__link--contact--desktop:active {
+  background: rgb(59, 199, 199) !important;
+  color: hsl(0deg, 0%, 100%) !important;
+}
 .nav__link--contact--mobile {
   background: hsl(51deg, 100%, 49%);
   color: hsl(212deg, 27%, 19%) !important;

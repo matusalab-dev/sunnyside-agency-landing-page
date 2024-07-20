@@ -133,6 +133,13 @@
     border-radius: 1.3em;
     color: $neutral-very-dark-desaturated-blue;
 
+    &--desktop {
+      &:hover,
+      &:active {
+        background: $primary-Dark-moderate-cyan !important;
+        color: $neutral-white !important;
+      }
+    }
     &--mobile {
       background: $primary-yellow;
       color: $neutral-very-dark-desaturated-blue !important;
