@@ -17,9 +17,18 @@ footer {
     }
 
     &__link {
-      color: $primary-Dark-blue;
+      // color: $primary-Dark-blue;
+      color: $primary-dark-desaturated;
       transition: color 0.2s ease-out;
       &:hover {
+        background: $primary-Dark-moderate-cyan;
+        // background: rgba($neutral-white, 0.6);
+        color: $neutral-white;
+
+        display: inline-block;
+        padding: 0;
+        text-transform: none;
+        font-family: $primary-font;
         color: $neutral-white;
       }
     }
@@ -28,5 +37,18 @@ footer {
     margin-top: 2em;
     max-width: 20em;
     width: 10em;
+
+    // check out about svg icons
+    // fill: white;
+    // color: white;
+    // .social-icon {
+    //   color: white;
+    //   fill: black;
+    //   background-color: white;
+    //   &:hover {
+    //     // background-color: white;
+    //     fill: white;
+    //   }
+    // }
   }
 }

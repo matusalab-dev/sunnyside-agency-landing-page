@@ -3,14 +3,20 @@
   // margin-top: 2em;
 
   @include breakpoint-down($breakpoint-md) {
-    // padding: 5em 3em 5em;
+    padding: 5em 1em 5em;
   }
-  h3 {
+  &__heading {
     font-family: $secondary-font;
     text-transform: uppercase;
     color: $neutral-Dark-grayish-blue;
     text-align: center;
     margin-bottom: 3em;
+    letter-spacing: 0.3cap;
+  }
+  &__name {
+    color: $neutral-very-dark-desaturated-blue;
+    font-size: 1.4rem;
+    margin-bottom: 0.4em;
   }
   // h1 { font-size: #{"max(1vw, 20px)"}};
   &__wrapper {
@@ -28,18 +34,27 @@
       flex-direction: column;
       text-align: center;
       &__profile {
-        width: 6em;
+        width: 4em;
         border-radius: 50%;
       }
 
       &__comment {
         font-family: $primary-font;
         font-weight: 600;
-        max-width: 35ch;
+        line-height: 1.7;
+        max-width: 38ch;
+        // color: $primary-Dark-blue;
+        color: $neutral-Very-dark-grayish-blue;
+
+        @include breakpoint-down($breakpoint-md) {
+          padding: 0 0.3em;
+          max-width: 25ch;
+        }
       }
 
       &__title {
         font-family: $primary-font;
+        font-weight: 400;
         color: $neutral-Grayish-blue;
       }
     }

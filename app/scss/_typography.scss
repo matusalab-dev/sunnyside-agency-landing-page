@@ -1,15 +1,28 @@
 .heading {
   font-family: $secondary-font;
+  line-height: 1;
+  @include breakpoint-down(756px) {
+    text-align: center;
+  }
   &--primary {
     text-align: center;
+    text-transform: uppercase;
     margin-top: 5rem;
     color: $neutral-white;
-    font-size: 4rem;
+    font-size: 3.2rem;
+    letter-spacing: 6px;
     @include breakpoint-down($breakpoint-md) {
-      margin-top: -4.6em;
+      margin-top: -4em;
     }
   }
   &--secondary {
+    font-size: 2.3rem;
+    font-weight: 900;
     color: $neutral-very-dark-desaturated-blue;
+    max-width: 13ch;
+
+    &-2 {
+      max-width: 15ch;
+    }
   }
 }

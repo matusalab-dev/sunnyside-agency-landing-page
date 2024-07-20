@@ -69,7 +69,7 @@
         </ul>
       </nav>
 
-      <a href="#footer"
+      <a href="#projects"
         ><img
           src="./images/icon-arrow-down.svg"
           class="arrow flex"
@@ -110,16 +110,28 @@
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <button class="btn btn--secondary">learn more</button>
+          <button class="btn btn--secondary btn--secondary-1">
+            learn more
+          </button>
         </div>
         <div
           class="container__item container__item--image container__item--image-1"
         >
-          <img
-            src="./images/desktop/image-transform.jpg"
-            alt="one of our feaures to transform your brand"
-            class="container__image"
-          />
+          <picture>
+            <source
+              srcset="./images/desktop/image-transform.jpg"
+              media="(min-width: 756px)"
+            />
+            <source
+              srcset="./images/mobile/image-transform.jpg"
+              media="(max-width: 756px)"
+            />
+            <img
+              src="./images/desktop/image-transform.jpg"
+              alt="transform your brand"
+              class="container__image"
+            />
+          </picture>
         </div>
       </section>
 
@@ -127,7 +139,7 @@
         <div
           class="container__item container__item--content flex flex-jc-c flex-ai-s spacing"
         >
-          <h2 class="heading heading--secondary">
+          <h2 class="heading heading--secondary heading--secondary-2">
             Stand out to the right audience
           </h2>
 
@@ -136,16 +148,28 @@
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.
           </p>
-          <button class="btn btn--secondary">learn more</button>
+          <button class="btn btn--secondary btn--secondary-2">
+            learn more
+          </button>
         </div>
         <div
           class="container__item container__item--image container__item--image-2"
         >
-          <img
-            src="./images/desktop/image-stand-out.jpg"
-            alt=""
-            class="container__image"
-          />
+          <picture>
+            <source
+              srcset="./images/desktop/image-stand-out.jpg"
+              media="(min-width: 756px)"
+            />
+            <source
+              srcset="./images/mobile/image-stand-out.jpg"
+              media="(max-width: 756px)"
+            />
+            <img
+              src="./images/desktop/image-stand-out.jpg"
+              alt="transform your brand"
+              class="container__image"
+            />
+          </picture>
         </div>
       </section>
 
@@ -153,19 +177,19 @@
         <!-- set a background image to each side  -->
 
         <div class="features__feature features__feature--1 spacing--md flex">
-          <h2 class="heading secondary-heading">Graphic design</h2>
+          <h2 class="heading heading--secondary">Graphic design</h2>
 
           <p class="description">
-            Graphic design Great design makes you memorable. We deliver artwork
-            that underscores your brand message and captures potential clients’
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
             attention.
           </p>
         </div>
 
         <div class="features__feature features__feature--2 spacing--md flex">
-          <h2 class="heading secondary-heading">Photography</h2>
+          <h2 class="heading heading--secondary">Photography</h2>
 
-          <p class="description">
+          <p class="description description-2">
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
           </p>
@@ -174,7 +198,7 @@
 
       <!-- features section of the website -->
       <section class="testimonials">
-        <h3>Client testimonials</h3>
+        <h3 class="testimonials__heading">Client testimonials</h3>
 
         <div class="testimonials__wrapper flex-gap-col">
           <div class="testimonial flex spacing flex-ai-c">
@@ -228,33 +252,97 @@
 
       <section id="projects" class="projects flex">
         <div class="images__wrapper">
-          <img
+          <!-- <img
             src="./images/desktop/image-gallery-milkbottles.jpg"
             alt=""
             class="projects__image"
-          />
+          /> -->
+
+          <picture>
+            <source
+              srcset="./images/desktop/image-gallery-milkbottles.jpg"
+              media="(min-width: 756px)"
+            />
+            <source
+              srcset="./images/mobile/image-gallery-milkbottles.jpg"
+              media="(max-width: 756px)"
+            />
+            <img
+              src="./images/desktop/image-gallery-milkbottles.jpg"
+              alt="image-gallery-milkbottles"
+              class="projects-image"
+            />
+          </picture>
         </div>
         <div class="images__wrapper">
-          <img
+          <!-- <img
             src="./images/desktop/image-gallery-orange.jpg"
             alt=""
             class="projects__image"
-          />
+          /> -->
+
+          <picture>
+            <source
+              srcset="./images/desktop/image-gallery-orange.jpg"
+              media="(min-width: 756px)"
+            />
+            <source
+              srcset="./images/mobile/image-gallery-orange.jpg"
+              media="(max-width: 756px)"
+            />
+            <img
+              src="./images/desktop/image-gallery-orange.jpg"
+              alt="image-gallery-orange"
+              class="projects-image"
+            />
+          </picture>
         </div>
         <div class="images__wrapper">
-          <img
+          <!-- <img
             src="./images/desktop/image-gallery-cone.jpg"
             alt=""
             class="projects__image"
-          />
+          /> -->
+
+          <picture>
+            <source
+              srcset="./images/desktop/image-gallery-cone.jpg"
+              media="(min-width: 756px)"
+            />
+            <source
+              srcset="./images/mobile/image-gallery-cone.jpg"
+              media="(max-width: 756px)"
+            />
+            <img
+              src="./images/desktop/image-gallery-cone.jpg"
+              alt="image-gallery-cone"
+              class="projects-image"
+            />
+          </picture>
         </div>
 
         <div class="images__wrapper">
-          <img
+          <!-- <img
             src="./images/desktop/image-gallery-sugarcubes.jpg"
             alt=""
             class="projects__image"
-          />
+          /> -->
+
+          <picture>
+            <source
+              srcset="./images/desktop/image-gallery-sugarcubes.jpg"
+              media="(min-width: 756px)"
+            />
+            <source
+              srcset="./images/mobile/image-gallery-sugar-cubes.jpg"
+              media="(max-width: 756px)"
+            />
+            <img
+              src="./images/desktop/image-gallery-sugarcubes.jpg"
+              alt="image-gallery-sugarcubes"
+              class="projects-image"
+            />
+          </picture>
         </div>
       </section>
     </main>
@@ -274,32 +362,43 @@
       <ul class="social-links flex flex-jc-sb">
         <li>
           <a href="#"
-            ><img src="./images/icon-facebook.svg" alt="icon-facebook"
+            ><img
+              src="./images/icon-facebook.svg"
+              alt="icon-facebook"
+              class="social-icon"
           /></a>
         </li>
         <li>
           <a href="#"
-            ><img src="./images/icon-instagram.svg" alt="icon-instagram"
+            ><img
+              src="./images/icon-instagram.svg"
+              alt="icon-instagram"
+              class="social-icon"
           /></a>
         </li>
         <li>
           <a href="#"
-            ><img src="./images/icon-twitter.svg" alt="icon-twitter"
+            ><img
+              src="./images/icon-twitter.svg"
+              alt="icon-twitter"
+              class="social-icon"
           /></a>
         </li>
         <li>
           <a href="#"
-            ><img src="./images/icon-pinterest.svg" alt="icon-pinterest"
+            ><img
+              src="./images/icon-pinterest.svg"
+              alt="icon-pinterest"
+              class="social-icon"
           /></a>
         </li>
       </ul>
-
-      <!-- <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Matusalab</a>.
-      </div> -->
     </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Matusalab</a>.
+    </div>
   </body>
 </html>

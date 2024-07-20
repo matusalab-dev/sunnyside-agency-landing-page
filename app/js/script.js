@@ -2,7 +2,7 @@ const hambergurMenu = document.querySelector(".header__menu");
 const mobileNavBar = document.querySelector(".nav__links-mobile");
 const navLinks = document.querySelectorAll(".nav__link-mobile");
 
-// add an eventlistener tio the hambergurMenu
+// add an eventlistener to the hambergurMenu
 hambergurMenu.addEventListener("click", function (e) {
   // check if the is-open class exists in mobile-nav
   console.log(mobileNavBar.classList.contains("is-open"));
