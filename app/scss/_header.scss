@@ -116,14 +116,14 @@
 
   &:hover,
   &:active {
-    background: rgba(132, 255, 255, 0.6);
-    color: $neutral-white;
+    // background: rgba(132, 255, 255, 0.6);
+    color: $neutral-very-dark-desaturated-blue;
 
     display: inline-block;
-    padding: 0.7em 1em;
+    // padding: 0.7em 1em;
     text-transform: uppercase;
-    font-family: $secondary-font;
-    border-radius: 1.3em;
+    // font-family: $secondary-font;
+    // border-radius: 1.3em;
   }
   &--contact {
     display: inline-block;
@@ -150,8 +150,9 @@
   &-mobile {
     &:hover,
     &:active {
-      background: $primary-Dark-moderate-cyan;
-      color: $neutral-white;
+      // background: $primary-Dark-moderate-cyan;
+      // color: $neutral-white;
+      color: $neutral-very-dark-desaturated-blue;
     }
   }
 }

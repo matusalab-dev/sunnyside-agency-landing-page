@@ -285,13 +285,9 @@ a {
   transition: color, text-uppercase, background 0.3s ease-out;
 }
 .nav__link:hover, .nav__link:active {
-  background: rgba(132, 255, 255, 0.6);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(212deg, 27%, 19%);
   display: inline-block;
-  padding: 0.7em 1em;
   text-transform: uppercase;
-  font-family: "Fraunces", serif;
-  border-radius: 1.3em;
 }
 .nav__link--contact {
   display: inline-block;
@@ -313,8 +309,7 @@ a {
   background: hsl(0deg, 0%, 100%);
 }
 .nav__link-mobile:hover, .nav__link-mobile:active {
-  background: rgb(59, 199, 199);
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(212deg, 27%, 19%);
 }
 
 .main .container {
